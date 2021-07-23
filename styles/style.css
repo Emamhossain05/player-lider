@@ -10,21 +10,129 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #E5E5E5;
 }
-.contianer{
-    background-color: #ffffff;
+main{
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    
 }
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    padding:33px 0 42px 33px ;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    margin: 20px 0;
+    
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin: 30px 0;
+}
+/* ------------
+player styles
+--------------- */
 
 .players{
     display: grid;
-     grid-template-columns: repeat(3,1fr);
+     grid-template-columns: repeat(3,
+     1fr);
+     grid-row-gap:30px;
+     padding-top: 40px;
+
 }
 .player{
     display: flex;
     align-items: center;
+
 }
 .player img{
     width: 56px;
     height: 56px;
+
 }
+.player h3{
+    padding-left: 16px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+/* -------------
+blog section styles 
+----------------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+article .blog{
+    display: flex;
+    margin-top: 33px;
+}
+.thumbnail{
+    
+}
+.thumbnail img{
+    width: 117px;
+    height: 117px;
+
+}
+.blog-info{
+    padding-left:16px ;
+}
+.blog-info h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog-info a{
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* course style  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course-thumbnail img{
+    width: 224px;
+    height: 104px;
+    margin-top: 24px;
+}
+.course p{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 30px;
+    text-transform: capitalize;
+}
+.course .author{
+    color: #ED6B4F;
+    font-weight: 400;
+    font-size: 14px;
+}
+span .filed{
+    color: #FFC014;
+    font-size: 12px;
+}
+span .nil{
+    background: #AEAEAE;
+    opacity: 0.25;
+    font-size: 12px;
+}
+span.rating{
+   color: #AEAEAE;
+}
+span.duration{
+    background-color:  #FEE5DF;
+    color: #ED6B4F;
+    border-radius: 25%;
+    display: inline-block;
+    padding: 3px 7px;
+}
+
+
+   
